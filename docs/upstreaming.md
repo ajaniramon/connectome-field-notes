@@ -45,5 +45,5 @@ an issue or has landed.
 
 | Idea | Why | Status |
 |---|---|---|
-| Recipe control of tool visibility and descriptions | Fewer, simpler tools for older models without forking | In progress: agent-framework #162 + connectome-host #135 (open) |
+| Recipe control of tool visibility and descriptions | Fewer, simpler tools for older models without forking | In progress: agent-framework #162 merged (2026-10-06), connectome-host #135 open |
 | Recipe overlays (`extends` / layered recipe files) | Lets someone apply a "3 Opus overlay" on top of their own recipe instead of copying whole recipes, which then drift | Idea, no issue yet |

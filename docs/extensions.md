@@ -60,8 +60,9 @@ Many simplifications need no code. A stock recipe already controls:
 - **How prose is routed** (`agent.proseRouting`).
 
 The host README is the reference for all of these. Recipe-level control over
-tool visibility and descriptions is in progress: agent-framework #162 and
-connectome-host #135, both still open.
+tool visibility and descriptions is in progress: agent-framework #162 is
+merged (2026-10-06), and connectome-host #135, which exposes it in recipes,
+is still open.
 
 ## How the extension seam works
 
