@@ -171,6 +171,13 @@ seam that would have made the patch unnecessary.
   carry a relative path to an extension.
 - **Extension paths are saved resolved.** The host snapshots the resolved
   `path` into the data directory, so never interpolate a `${SECRET}` into it.
+- **A runtime import resolves from the extension's own location first.** An
+  extension that imports `@animalabs/*` at runtime (to subclass a strategy,
+  say) gets this repo's `node_modules` copy if this checkout has one, for
+  example after `npm install` for `npm run check`, and that may not be the
+  version your host ships. Without one, Bun falls back to the host's copy.
+  Load extensions from a checkout without `node_modules`, or keep its
+  versions in step with the host.
 - **Extensions run in-process, with full access.** That means your agent's API
   keys, its store and the filesystem. Read every extension before loading it,
   including the ones in this repo.
